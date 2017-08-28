@@ -4,6 +4,8 @@ List of general purpose commands for Kubernetes management:
 
 - [PODS](#pods)
 - [Create Deployments](#create-deployments)
+- [Scaling PODs](#scaling-pods)
+- [POD Upgrade / History](#pod-upgrade-history)
 
 ## PODS
 
