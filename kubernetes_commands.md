@@ -5,7 +5,7 @@ List of general purpose commands for Kubernetes management:
 - [PODS](#pods)
 - [Create Deployments](#create-deployments)
 - [Scaling PODs](#scaling-pods)
-- [POD Upgrade / History](#pod-upgrade-history)
+- [POD Upgrade / History](#pod-upgrade-and-history)
 
 ## PODS
 
@@ -30,7 +30,7 @@ $ kubectl run ghost --image=ghost --record
 $ kubectl scale deployment/POD_NAME --replicas=N
 ```
 
-## POD Upgrade/history
+## POD Upgrade and history
 
 #### List history of deployments
 
