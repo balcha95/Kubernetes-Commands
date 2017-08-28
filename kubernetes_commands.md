@@ -47,6 +47,12 @@ $ kubectl rollout undo deployment/DEPLOYMENT_NAME --to-revision=N
 
 ## Services
 
+List services
+
+```
+$ kubectl get services
+```
+
 Expose PODs as services (creates endpoints)
 
 ```
