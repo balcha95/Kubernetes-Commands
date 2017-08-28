@@ -2,9 +2,9 @@
 
 List of general purpose commands for Kubernetes management:
 
-- [PODS](#kube_pods)
+- [PODS](#pods)
 
-## PODS {kube_pods}
+## PODS
 
 ```
 $ kubectl get pods
