@@ -6,14 +6,15 @@ List of general purpose commands for Kubernetes management:
 - [Create Deployments](#create-deployments)
 - [Scaling PODs](#scaling-pods)
 - [POD Upgrade / History](#pod-upgrade-and-history)
+- [Services](#services)
 
 ## PODS
 
 ```
 $ kubectl get pods
 $ kubectl get pods --all-namespaces
-$ kubectl get pod fluent-bit -o wide
-$ kubectl get pod fluent-bit -o yaml
+$ kubectl get pod monkey -o wide
+$ kubectl get pod monkey -o yaml
 ```
 
 ## Create Deployments
@@ -21,7 +22,7 @@ $ kubectl get pod fluent-bit -o yaml
 Create single deployment
 
 ```
-$ kubectl run ghost --image=ghost --record
+$ kubectl run monkey --image=monkey --record
 ```
 
 ## Scaling PODs
@@ -43,12 +44,11 @@ $ kubectl rollout history deployment/DEPLOYMENT_NAME
 ```
 $ kubectl rollout undo deployment/DEPLOYMENT_NAME --to-revision=N
 ```
-- $ kubectl scale
-- $ kubectl label
-- $ kubectl get 
-  - pods
-  - deployments
-  - rs | replicasets
-  - logs
-  - run 
 
+## Services
+
+Expose PODs as services (creates endpoints)
+
+```
+$ kubectl expose deployment/monkey --port=2001 --type=NodePort
+```
