@@ -11,6 +11,14 @@ $ kubectl get pod fluent-bit -o wide
 $ kubectl get pod fluent-bit -o yaml
 ```
 
+## Create Deployments
+
+Create single deployment
+
+```
+$ kubectl run ghost --image=ghost --record
+```
+
 ## Scaling PODs
 
 ```bash
