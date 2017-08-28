@@ -2,11 +2,12 @@
 
 List of general purpose commands for Kubernetes management:
 
-### Informational
+## PODS
 
 ```
 $ kubectl get pods
 $ kubectl get pods --all-namespaces
+$ kubectl get pod fluent-bit -o yaml
 ```
 
 - $ kubectl scale
