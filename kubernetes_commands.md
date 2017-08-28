@@ -28,10 +28,16 @@ $ kubectl scale deployment/POD_NAME --replicas=N
 ## POD Upgrade/history
 
 #### List history of deployments
+
 ```
 $ kubectl rollout history deployment/DEPLOYMENT_NAME
 ```
 
+#### Jump to specific revision
+
+```
+$ kubectl rollout undo deployment/DEPLOYMENT_NAME --to-revision=N
+```
 - $ kubectl scale
 - $ kubectl label
 - $ kubectl get 
