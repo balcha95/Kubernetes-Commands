@@ -17,6 +17,13 @@ $ kubectl get pod fluent-bit -o yaml
 $ kubectl scale deployment/POD_NAME --replicas=N
 ```
 
+## POD Upgrade/history
+
+#### List history of deployments
+```
+$ kubectl rollout history deployment/DEPLOYMENT_NAME
+```
+
 - $ kubectl scale
 - $ kubectl label
 - $ kubectl get 
