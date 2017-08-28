@@ -2,6 +2,7 @@
 
 List of general purpose commands for Kubernetes management:
 
+toc
 <script src="https://gist.github.com/raw/3000691/gist-toc.js"></script>
 
 ## PODS
