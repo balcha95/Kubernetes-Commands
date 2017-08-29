@@ -114,5 +114,12 @@ $ kubectl get secrets mysql -o yaml
 ```
 $ kubectl create configmap foobar --from-file=config.js
 $ kubectl get configmap foobar -o yaml
+```
 
+## DNS
+
+List DNS-PODs:
+
+```
+$ kubectl get pods --all-namespaces |grep dns
 ```
