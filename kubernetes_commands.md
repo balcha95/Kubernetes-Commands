@@ -174,6 +174,13 @@ NodeSelector based policy:
 $ kubectl label node minikube foo=bar
 ```
 
+Node Binding through API Server:
+
+```
+$ kubectl proxy 
+$ curl -H "Content-Type: application/json" -X POST --data @binding.json http://localhost:8001/api/v1/namespaces/default/pods/foobar-sched/binding
+```
+
 ## Tains and Tolerations
 
 ```
