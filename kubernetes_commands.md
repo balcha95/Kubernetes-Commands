@@ -194,4 +194,5 @@ $ kubectl taint node master foo=bar:NoSchedule
 $ kubectl describe
 $ kubectl logs
 $ kubectl exec
+$ kubectl get nodes --show-labels
 ```
