@@ -14,6 +14,7 @@ List of general purpose commands for Kubernetes management:
 - [Volumes](#volumes)
 - [Secrets](#secrets)
 - [ConfigMaps](#configmaps)
+- [Ingress](#ingress)
 
 ## VIM Setup for Yaml files
 
@@ -131,3 +132,17 @@ $ kubectl exec -ti busybox -- nslookup nginx
 ```
 
 > Note: kube-proxy running in the worker nodes manage services and set iptables rules to direct traffic.
+
+## Ingress
+
+Commands to manage Ingress for ClusterIP service type:
+
+```
+$ kubectl get ingress
+$ kubectl expose deployment ghost --port=2368
+```
+
+Spec for ingress:
+
+- [backend](https://github.com/kubernetes/ingress/tree/master/examples/deployment/nginx)
+ 
