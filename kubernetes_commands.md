@@ -14,14 +14,17 @@ List of general purpose commands for Kubernetes management:
 
 ## VIM Setup for Yaml files
 
-Plase the following lines in ~/.vimrc:
+Put the following lines in ~/.vimrc:
 
 ```
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 filetype plugin indent on
 autocmd FileType yaml setl indentkeys-=<:>
-
 ```
+
+Keyboard hints:
+
+- ctrl + f: auto indent line (requires INSERT mode)
 
 ## PODS
 
