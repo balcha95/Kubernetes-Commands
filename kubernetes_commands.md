@@ -1,5 +1,9 @@
 # Kubernetes Commands
 
+Helper setup to edit .yaml files with Vim:
+
+- [VIM Setup for Yaml files](#vim-setup-for-yaml-files)
+
 List of general purpose commands for Kubernetes management:
 
 - [PODS](#pods)
@@ -7,6 +11,17 @@ List of general purpose commands for Kubernetes management:
 - [Scaling PODs](#scaling-pods)
 - [POD Upgrade / History](#pod-upgrade-and-history)
 - [Services](#services)
+
+## VIM Setup for Yaml files
+
+Plase the following lines in ~/.vimrc:
+
+```
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+filetype plugin indent on
+autocmd FileType yaml setl indentkeys-=<:>
+
+```
 
 ## PODS
 
