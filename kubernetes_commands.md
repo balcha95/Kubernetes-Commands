@@ -16,6 +16,7 @@ List of general purpose commands for Kubernetes management:
 - [ConfigMaps](#configmaps)
 - [Ingress](#ingress)
 - [Horizontal Pod Autoscalers](#horizontal-pod-autoscalers)
+- [Scheduler](#scheduler)
 
 ## VIM Setup for Yaml files
 
@@ -161,4 +162,12 @@ $ kubectl autoscale --help
 ```
 $ kubectl get daemonsets
 $ kubectl get ds
+```
+
+## Scheduler
+
+NodeSelector based policy:
+
+```
+$ kubectl label node minikube foo=bar
 ```
