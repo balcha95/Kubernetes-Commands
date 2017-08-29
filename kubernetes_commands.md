@@ -52,6 +52,7 @@ $ kubectl get pods
 $ kubectl get pods --all-namespaces
 $ kubectl get pod monkey -o wide
 $ kubectl get pod monkey -o yaml
+$ kubectl describe pod monkey
 ```
 
 ## Create Deployments
