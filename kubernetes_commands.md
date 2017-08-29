@@ -17,6 +17,7 @@ List of general purpose commands for Kubernetes management:
 - [Ingress](#ingress)
 - [Horizontal Pod Autoscalers](#horizontal-pod-autoscalers)
 - [Scheduler](#scheduler)
+- [Taints and Tolerations](#tains_and_tolerations)
 
 ## VIM Setup for Yaml files
 
@@ -170,4 +171,10 @@ NodeSelector based policy:
 
 ```
 $ kubectl label node minikube foo=bar
+```
+
+## Tains and Tolerations
+
+```
+$ kubectl taint node master foo=bar:NoSchedule
 ```
