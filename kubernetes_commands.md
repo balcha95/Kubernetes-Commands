@@ -11,6 +11,7 @@ List of general purpose commands for Kubernetes management:
 - [Scaling PODs](#scaling-pods)
 - [POD Upgrade / History](#pod-upgrade-and-history)
 - [Services](#services)
+- [Volumes](#volumes)
 
 ## VIM Setup for Yaml files
 
@@ -87,4 +88,13 @@ Expose PODs as services (creates endpoints)
 
 ```
 $ kubectl expose deployment/monkey --port=2001 --type=NodePort
+```
+
+## Volumes
+
+Lits Persisten Volumes and Persistent Volumes Claims:
+
+```
+$ kubectl get pv
+$ kubectl get pvc
 ```
