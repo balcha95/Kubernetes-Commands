@@ -155,3 +155,10 @@ When heapster runs:
 $ kubectl get hpa
 $ kubectl autoscale --help
 ```
+
+## DaemonSets
+
+```
+$ kubectl get daemonsets
+$ kubectl get ds
+```
