@@ -15,6 +15,7 @@ List of general purpose commands for Kubernetes management:
 - [Secrets](#secrets)
 - [ConfigMaps](#configmaps)
 - [Ingress](#ingress)
+- [Horizontal Pod Autoscalers](#horizontal-pod-autoscalers)
 
 ## VIM Setup for Yaml files
 
@@ -146,3 +147,11 @@ Spec for ingress:
 
 - [backend](https://github.com/kubernetes/ingress/tree/master/examples/deployment/nginx)
  
+## Horizontal Pod Autoscaler
+
+When heapster runs:
+
+```
+$ kubectl get hpa
+$ kubectl autoscale --help
+```
