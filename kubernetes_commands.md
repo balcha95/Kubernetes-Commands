@@ -123,3 +123,9 @@ List DNS-PODs:
 ```
 $ kubectl get pods --all-namespaces |grep dns
 ```
+
+Check DNS for pod nginx (assuming a busybox POD/container is running)
+
+```
+$ kubectl exec -ti busybox -- nslookup nginx
+```
