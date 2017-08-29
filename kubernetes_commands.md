@@ -18,6 +18,7 @@ List of general purpose commands for Kubernetes management:
 - [Horizontal Pod Autoscalers](#horizontal-pod-autoscalers)
 - [Scheduler](#scheduler)
 - [Taints and Tolerations](#tains_and_tolerations)
+- [Troubleshooting](#troubleshooting
 
 ## VIM Setup for Yaml files
 
@@ -185,4 +186,12 @@ $ curl -H "Content-Type: application/json" -X POST --data @binding.json http://l
 
 ```
 $ kubectl taint node master foo=bar:NoSchedule
+```
+
+## Troubleshooting
+
+```
+$ kubectl describe
+$ kubectl logs
+$ kubectl exec
 ```
