@@ -129,3 +129,5 @@ Check DNS for pod nginx (assuming a busybox POD/container is running)
 ```
 $ kubectl exec -ti busybox -- nslookup nginx
 ```
+
+> Note: kube-proxy running in the worker nodes manage services and set iptables rules to direct traffic.
