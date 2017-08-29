@@ -12,6 +12,7 @@ List of general purpose commands for Kubernetes management:
 - [POD Upgrade / History](#pod-upgrade-and-history)
 - [Services](#services)
 - [Volumes](#volumes)
+- [Secrets](#secrets)
 
 ## VIM Setup for Yaml files
 
@@ -97,4 +98,13 @@ Lits Persistent Volumes and Persistent Volumes Claims:
 ```
 $ kubectl get pv
 $ kubectl get pvc
+```
+
+## Secrets
+
+```
+$ kubectl get secrets
+$ kubectl create secret generic --help
+$ kubectl create secret generic mysql --from-literal=password=root
+$ kubectl get secrets mysql -o yaml
 ```
