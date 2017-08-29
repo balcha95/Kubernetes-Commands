@@ -13,6 +13,7 @@ List of general purpose commands for Kubernetes management:
 - [Services](#services)
 - [Volumes](#volumes)
 - [Secrets](#secrets)
+- [ConfigMaps](#configmaps)
 
 ## VIM Setup for Yaml files
 
@@ -107,4 +108,11 @@ $ kubectl get secrets
 $ kubectl create secret generic --help
 $ kubectl create secret generic mysql --from-literal=password=root
 $ kubectl get secrets mysql -o yaml
+```
+## ConfigMaps
+
+```
+$ kubectl create configmap foobar --from-file=config.js
+$ kubectl get configmap foobar -o yaml
+
 ```
