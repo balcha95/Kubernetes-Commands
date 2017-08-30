@@ -201,7 +201,9 @@ $ kubectl exec
 $ kubectl get nodes --show-labels
 ```
 
-Docs Cluster: https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/
+Docs Cluster: 
+- https://kubernetes.io/docs/tasks/debug-application-cluster/debug-cluster/
+- https://github.com/kubernetes/kubernetes/wiki/Debugging-FAQ
 
 ## Role Based Access Control
 
