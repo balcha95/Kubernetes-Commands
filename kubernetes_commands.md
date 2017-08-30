@@ -204,3 +204,11 @@ $ kubectl get nodes --show-labels
 - ClusterRule
 - Binding
 - ClusterRoleBinding
+
+```
+$ kubectl create role fluent-reader --verb=get --verb=list --verb=watch --resource=pods
+$ kubectl create rolebinding foo --role=fluent-reader --user=minikube
+$ kubectl get rolebinding foo -o yaml
+```
+
+## Security Contexts
