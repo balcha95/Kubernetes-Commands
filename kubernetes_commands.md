@@ -21,6 +21,8 @@ List of general purpose commands for Kubernetes management:
 - [Troubleshooting](#troubleshooting)
 - [Role Based Access Control (RBAC)](#role_based_access_control)
 - [Security Contexts](#security_contexts)
+- [Pod Security Policies](#pod_security_policies)
+- [Network Policies](#network_policies)
 
 ## VIM Setup for Yaml files
 
@@ -220,3 +222,14 @@ Docs: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
  - securityCOntext
    - runAsNonRoot: true
    
+## Pod Security Policies
+
+Docs: https://github.com/kubernetes/kubernetes/blob/master/examples/podsecuritypolicy/rbac/README.md
+
+## Network Policies
+
+Network isolation at Pod level by using annotations
+
+```
+$ kubectl annotate ns <namespace> "net.beta.kubernetes.io/network-policy={\"ingress\": {\"isolation\": \"DefaultDeny\"}}"
+```
