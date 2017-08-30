@@ -199,6 +199,7 @@ $ kubectl describe
 $ kubectl logs
 $ kubectl exec
 $ kubectl get nodes --show-labels
+$ kubectl get events
 ```
 
 Docs Cluster: 
