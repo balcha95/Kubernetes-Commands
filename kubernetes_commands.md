@@ -18,7 +18,7 @@ List of general purpose commands for Kubernetes management:
 - [Horizontal Pod Autoscalers](#horizontal-pod-autoscalers)
 - [Scheduler](#scheduler)
 - [Taints and Tolerations](#tains_and_tolerations)
-- [Troubleshooting](#troubleshooting
+- [Troubleshooting](#troubleshooting)
 - [Role Based Access Control (RBAC)](#role_based_access_control)
 
 ## VIM Setup for Yaml files
@@ -199,3 +199,8 @@ $ kubectl get nodes --show-labels
 ```
 
 ## Role Based Access Control
+
+- Role
+- ClusterRule
+- Binding
+- ClusterRoleBinding
