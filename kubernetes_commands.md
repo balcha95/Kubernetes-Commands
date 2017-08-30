@@ -20,6 +20,7 @@ List of general purpose commands for Kubernetes management:
 - [Taints and Tolerations](#tains_and_tolerations)
 - [Troubleshooting](#troubleshooting)
 - [Role Based Access Control (RBAC)](#role_based_access_control)
+- [Security Contexts](#security_contexts)
 
 ## VIM Setup for Yaml files
 
@@ -212,3 +213,10 @@ $ kubectl get rolebinding foo -o yaml
 ```
 
 ## Security Contexts
+
+Docs: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+
+- spec
+ - securityCOntext
+   - runAsNonRoot: true
+   
