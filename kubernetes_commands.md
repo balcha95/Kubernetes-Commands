@@ -233,3 +233,7 @@ Network isolation at Pod level by using annotations
 ```
 $ kubectl annotate ns <namespace> "net.beta.kubernetes.io/network-policy={\"ingress\": {\"isolation\": \"DefaultDeny\"}}"
 ```
+
+More about Network Policies as a resource: 
+
+https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/
